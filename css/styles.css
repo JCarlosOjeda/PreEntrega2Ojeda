@@ -32,18 +32,27 @@ a {
 .header {
     background-color: #07a837;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+
 
 .marca__imagen {
     width: 100px;
+    margin-top: 10px;
 }
 
 .marca__title {
     font-size: 1.8rem;
-    color: white;
+    color: rgb(255, 251, 212);
 }
 
 .navbar__lista {
@@ -54,9 +63,39 @@ a {
 .navbar__item a {
     color: white;
     font-size: 0.8rem;
-    text-decoration: underline;
+    
 }
 
+
+@media (min-width:1200px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav ul{
+        flex-direction: column;
+        width: 200px;
+        
+        
+
+    }
+    .marca__imagen{
+        width: 300px;
+    }
+    .marca__title{
+        font-size: 4rem;
+    }
+    .navbar__item a {
+        color: white;
+        font-size: 1.2rem;
+        
+    }
+    .navbar__item :hover{
+        color: rgb(255, 102, 0); 
+        
+    }
+}
 /*---Main---*/
 .main {
     background-color: yellow;
@@ -113,12 +152,14 @@ footer nav ul li a {
 }
 
 @media (min-width: 1200px) {
-    .galeria {flex-direction: row;
-    flex-wrap: swrap;
-    justify-content: space-around;
-    align-items: baseline;
+    .galeria {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
 }
-}
+
 .galeria__caja {
     width: 350px;
     height: fit-content;
