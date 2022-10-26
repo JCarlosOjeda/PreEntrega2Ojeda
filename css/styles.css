@@ -106,12 +106,7 @@ nav ul {
     background-color: yellow;
 }
 
-.provisorio {
-    height: 500px;
-    background-image: url(../images/frente.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 /*--footer--*/
 
@@ -163,6 +158,7 @@ footer nav ul li a {
         justify-content: space-around;
         align-items: baseline;
     }
+
 }
 
 .galeria__caja {
@@ -181,7 +177,13 @@ footer nav ul li a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition-duration: 0.2s;
 }
+.galeria__imagen:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 10px 40px black; 
+}
+
 
 
 /*--Contacto--*/
