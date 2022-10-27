@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 ul,
@@ -17,14 +17,20 @@ a {
     text-decoration: none;
 }
 
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
 /*---Titulos(h2)---*/
 
 .titulosh2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-style: oblique;
-    text-decoration: underline;
+    text-decoration: underline 2px;
     text-align: center;
     padding: 20px;
+    font-weight: 600;
 }
 
 /*---Header---*/
@@ -53,6 +59,7 @@ nav ul {
 .marca__title {
     font-size: 1.8rem;
     color: rgb(255, 251, 212);
+    font-weight: 600;
 }
 
 .navbar__lista {
@@ -61,7 +68,7 @@ nav ul {
 }
 
 .navbar__item a {
-    color:  rgb(255, 251, 212);
+    color: rgb(255, 251, 212);
     font-size: 0.8rem;
     padding: 3px;
 }
@@ -91,7 +98,7 @@ nav ul {
     }
 
     .navbar__item a {
-        color:  rgb(255, 251, 212);
+        color: rgb(255, 251, 212);
         font-size: 1.5rem;
 
     }
@@ -106,7 +113,16 @@ nav ul {
     background-color: yellow;
 }
 
+/*---Carousel---*/
 
+.carousel-inner {
+    height: 460px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 460px
+}
 
 /*--footer--*/
 
@@ -125,11 +141,12 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: rgb(255, 251, 212);
     font-style: oblique;
     text-decoration: underline;
 }
+
 
 .redes {
     padding: 10px;
@@ -137,10 +154,13 @@ footer nav ul li a {
 
 .redes a {
     color: yellow;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     padding: 20px;
 }
+
+
+
 
 /*--Galeria--*/
 
@@ -157,6 +177,11 @@ footer nav ul li a {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: baseline;
+    }
+
+    .galeria__imagen:hover {
+        transform: scale(1.3);
+        box-shadow: 5px 10px 40px black;
     }
 
 }
@@ -177,16 +202,15 @@ footer nav ul li a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition-duration: 0.2s;
-}
-.galeria__imagen:hover{
-    transform: scale(1.2);
-    box-shadow: 5px 10px 40px black; 
+    transition-duration: 0.3s;
 }
 
-
+.galeria__caja__texto {
+    font-weight: 600;
+}
 
 /*--Contacto--*/
+
 .formContacto {
     width: fit-content;
     height: fit-content;
@@ -202,7 +226,7 @@ footer nav ul li a {
     height: 40px;
     margin-bottom: 10px;
     font-size: 2rem;
-    color:  rgb(255, 251, 212);
+    color: rgb(255, 251, 212);
 }
 
 .formContactoInput {
@@ -232,11 +256,13 @@ footer nav ul li a {
 .mapaContenedor {
     background-color: yellow;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    }
+    flex-direction: column;
+    align-items: center;
+}
 
 .mapaIframe {
+    width: 360px;
+    height: 360px;
     margin: 30px;
     border-left: 500px;
     box-shadow: 5px 10px 40px black;

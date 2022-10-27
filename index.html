@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Proyecto</title>
@@ -15,9 +18,9 @@
 <body>
     <header class="header">
 
-
-        <img class="marca__imagen" src="./images/verdemanzana-logo.png" alt="logo">
-
+        
+            <img class="marca__imagen" src="./images/verdemanzana-logo.png" alt="logo">
+        
 
         <h1 class="marca__title">Verde Manzana</h1>
 
@@ -36,9 +39,10 @@
 
         <section id="imagenes">
 
-            <div class="container-fluid">
+            <div class="ontainer-fluid">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-xl-6 mt-4">
+                    <div class="col-xl-10 mt-4" >
+                       
                         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -57,7 +61,7 @@
                                     <img src="./images/nieve2.jpg" class="d-block w-100" alt="Nieve">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./images/interior.jpg" class="d-block w-100" alt="interior">
+                                    <img src="./images/multiple.jpg" class="d-block w-100" alt="Collage">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -74,11 +78,10 @@
                     </div>
                 </div>
             </div>
-
+            
         </section>
 
         <section>
-
             <h2 class="titulosh2">Lo que ofrecemos!!!</h2>
 
             <div class="galeria">
@@ -90,12 +93,12 @@
 
                 <div class="galeria__caja">
                     <img class="galeria__imagen" src="./images/interior.jpg" alt="Capacidad">
-                    <h3>Espacio interior y exterior, con capacidad para 50 adultos y 30 niños</h3>
+                    <h3 class="galeria__caja__texto" >Espacio interior y exterior, con capacidad para 50 adultos y 30 niños</h3>
                 </div>
 
                 <div class="galeria__caja">
                     <img class="galeria__imagen" src="./images/parque.jpg" alt="Parque">
-                    <h3>Un hermoso parque con parrilla, cancha de futbol y juegos para chicos y grandes</h3>
+                    <h3 class="galeria__caja__texto">Un hermoso parque con parrilla, cancha de futbol y juegos para chicos y grandes</h3>
                 </div>
 
             </div>
@@ -109,17 +112,17 @@
 
                 <div class="galeria__caja">
                     <img class="galeria__imagen" src="./images/personajes.jpg" alt="Personajes">
-                    <h3>Tu personaje favorito está en VerdeManzana</h3>
+                    <h3 class="galeria__caja__texto">Tu personaje favorito está en VerdeManzana</h3>
                 </div>
 
                 <div class="galeria__caja">
                     <img class="galeria__imagen" src="./images/burbuja.jpg" alt="Show de Burbujas">
-                    <h3>Show de burbujas, tatuajes, pochoclos, Maquina de helado</h3>
+                    <h3 class="galeria__caja__texto">Show de burbujas, tatuajes, pochoclos, Maquina de helado</h3>
                 </div>
 
                 <div class="galeria__caja">
                     <img class="galeria__imagen" src="./images/robot.jpg" alt="Living">
-                    <h3>Robot Laser, show de luces laser y muchas cosas más!!!</h3>
+                    <h3 class="galeria__caja__texto">Robot Laser, show de luces laser y muchas cosas más!!!</h3>
                 </div>
 
             </div>
@@ -133,25 +136,24 @@
 
         <nav>
             <ul>
-                <li> <a href="#header">Inicio</a> </li>
+                <li> <a href="#imagenes">Inicio</a> </li>
                 <li> <a href="mailto:verdemanzana@gmail.com">Email</a> </li>
                 <li> <a href="./pages/quienes.html#fqas">Preguntas Frecuentes</a> </li>
             </ul>
         </nav>
 
-        <div class="redes">
-            <a href="https://www.instagram.com/explore/tags/tumejorfestejo/" class="bi bi-instagram"
-                target="_blank"></a>
-            <a href="https://www.facebook.com/verdemanzana2008/" class="bi bi-facebook" target="_blank"></a>
-            <a href="https://wa.me/+5491158848056" class="bi bi-whatsapp" target="_blank"></a>
+<div class="redes">
+        <a href="https://www.instagram.com/explore/tags/tumejorfestejo/" class="bi bi-instagram" target="_blank"></a>
+        <a href="https://www.facebook.com/verdemanzana2008/" class="bi bi-facebook" target="_blank"></a>
+        <a href="https://wa.me/+5491158848056" class="bi bi-whatsapp" target="_blank"></a>
 
         </div>
 
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
 </body>
 
